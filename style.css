@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("background.jpg");
-  height: 720px;
+  height: 100vh;
 }
 
 .nav {
@@ -67,6 +67,18 @@ body {
   font-size: 18px;
 }
 
+.main1 .main-content {
+  padding-top: 90px;
+}
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
 .mail {
   width: 378px;
   background-color: #000000a3;
@@ -76,17 +88,6 @@ body {
   font-size: 17px;
   padding: 12px;
   color: white;
-}
-
-.start {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
-.main1 .main-content {
-  padding-top: 90px;
 }
 
 .started {
@@ -109,20 +110,25 @@ body {
   background: radial-gradient(circle at center, #010127, #000);
 }
 
-.trend-box,
+.trend-box{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4vh 9vw;
+}
 .faqs-box {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 30px 170px;
+  padding: 4vh 9vw;
 }
 
 .trend-box h1,
 .more-reasons h1,
 .faqs-box h1 {
   font-weight: 500;
-  font-size: 31px;
-  padding-bottom: 20px;
+  font-size: 5vh;
+  padding-bottom: 3vh;
 }
 
 .trend-box .top-movies {
@@ -149,7 +155,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 30px 150px;
+  padding: 3vh 9vw;
 }
 .more-reasons .all-reasons .reason {
   padding: 22px;
@@ -162,8 +168,7 @@ body {
 
 .all-reasons {
   display: flex;
-  justify-content: space-between;
-
+  flex-wrap: wrap;
   gap: 15px;
 }
 .reason h2 {
@@ -174,6 +179,10 @@ body {
   font-size: 17px;
   padding-top: 18px;
   color: rgb(187 185 191);
+}
+
+.faqs-box h1{
+  font-size: 7vh;
 }
 
 .faq {
@@ -192,10 +201,171 @@ option {
 }
 
 .ready {
-  gap: 25px;
+  gap: 2vh;
   display: flex;
   flex-direction: column;
   padding: 34px 154px;
   text-align: center;
 }
 
+.ready p{
+  font-size: 5vh;
+}
+.copy-right{
+  text-align: center;
+  font-size: 4vh;
+  margin: 5vw 10vw;
+}
+
+@media (orientation: portrait)
+{
+  .main1 {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("background.jpg");
+  height: 60vh;
+  }
+
+  .nav img {
+  height: 6vw;
+  }
+
+ 
+  .main1 .main-content h1 {
+  font-size: 8vw;
+  text-align: center;
+  font-weight: 800;
+  }
+
+  .main1 .main-content h4 {
+  font-size: 5vw;
+  line-height: 10vw;
+  text-align: center;
+  }
+
+  .main1 .main-content p {
+  padding: 3vw;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  line-height: 5vw;
+  text-align: center;
+  font-size: 4vw;
+  }
+
+  .start {
+  margin:5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4vw;
+  }
+
+  .mail {
+  width: 80vw;
+  height: 5vw;
+  font-size: 4.5vw;
+  margin-left:6vw;
+  margin-right: 6vw;
+  }
+
+  .started {
+  height: 5vh;
+  width: 55vw;
+  font-size: 6.5vw;
+
+  }
+
+  .line {
+  height: 2vh;
+  }
+
+  .trend-box,
+  .faqs-box {
+  gap: 4px;
+  padding: 2vh 8vw;
+  }
+
+  .trend-box h1,
+  .more-reasons h1,
+  .faqs-box h1 {
+  font-weight: 500;
+  font-size: 31px;
+  padding-bottom: 20px;
+  }
+  .trend-box .top-movies {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3vh;
+  }
+
+  .trend-box .top-movies .movie img {
+  height: 20vh;
+  width:  30vw;
+  }
+  .movie .num {
+  padding-top: 13vh;
+  font-size: 12vw;
+  }
+
+  .more-reasons {
+  padding: 2vh 8vw;
+  }
+
+  .more-reasons .all-reasons .reason {
+  padding: 5vw;
+  width: 70vw;
+  height: 13vh;
+  border-radius: 20px;
+  
+  /* background-color: rgb(29 24 48); */
+  background: radial-gradient(circle at bottom, rgb(46 15 42), rgb(25 32 66));
+  }
+
+  .more-reasons h1{
+    font-size: 8vw;
+  }
+  .reason h2 {
+    font-size: 5.5vw;
+  font-weight: 700;
+  }
+
+  .reason p {
+  font-size: 3vw;
+  padding-top: 1vw;
+  color: rgb(187 185 191);
+  }
+
+  .faqs-box h1{
+    font-size: 8vw;
+  }
+
+  .faqs-box select,
+  option {
+  padding: 2vw;
+  font-size: 5vw;
+  width: 80vw;
+  height: 10vh;
+  }
+
+  .ready {
+  gap: 3vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 5vw;
+  text-align: center;
+  }
+
+  .ready p{
+  font-size: 5vw;
+  }
+
+  .copy-right{
+  text-align: center;
+  font-size: 4vw;
+
+  }
+
+}
